@@ -17,6 +17,21 @@
     }
 }
 
+@media (min-width: 1024px) {
+    .body {
+        max-width: 1024px;
+        padding: 2em;
+    }
+    .main {
+        padding: 3em;
+    }
+
+    .hero__image{
+        width: 100%;
+        max-width: 800px;
+    }
+}
+
 :root{
     /* brand colors used in Figma */
     --clr-federal-blue: #03045E;
@@ -66,6 +81,7 @@
     font-style: normal;
     display: flex;
     flex-direction: column;
+
 }
 .main{
     backdrop-filter: blur(16px);
@@ -74,7 +90,8 @@
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); 
     padding: 1em;
-    height: auto;
+/*     height: auto; */ 
+/* Er højst sansynligt redundant, medmindre andet overrider mains højde */
 
 }
 
@@ -95,6 +112,7 @@
     filter: drop-shadow(4px rgba(0, 0, 0, 0.15));
     text-align: center;
     font-size: var(--font-size-1);
+    flex: 1;
 }
 .button{
     border-radius: 40px;
@@ -128,7 +146,7 @@
 }
 .hero__image{
     z-index: 1;
-    height:90%;
+    height:80%;
     width: 87%;
 }
 .hero__cloud {
@@ -206,11 +224,18 @@
     transition-duration: 200ms;
 }
 
+.headingContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
 /* create account page */
 .backButton__svg{
     fill: var(--clr-federal-blue);
-    position: absolute;
-    inset: 13px 0 0 2%;
+/*     position: absolute;
+    inset: 13px 0 0 2%; */
 }
 .createAccount__phoneNumber {
     display: flex;
