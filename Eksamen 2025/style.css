@@ -392,3 +392,140 @@ margin: auto;
     margin: auto;
     width: 100%;
 }
+
+/* Homepage */
+.home{
+display: flex;
+flex-direction: column;
+
+}
+
+.homeButtons{
+
+}
+
+.homeButtons__pickUp{
+
+}
+
+.homeButtons__deliver{}
+
+.nærboksInfo__header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.nærboksLocationContainer {
+    display: flex;
+    flex-direction: column; 
+}
+
+.nærboksLocation{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 600;
+    padding: 0.25em 0 0.25em 0;
+}
+
+.nærboksLocation__info{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.nærboksLocation__guide{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 600;
+    padding: 0.25em 0 0.25em 0;
+}
+
+.location__gps {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-decoration: none; 
+}
+
+.location__gps img {
+    width: 40px; 
+    height: 40px;
+    object-fit: contain;
+    margin-bottom: 0.25em; 
+}
+
+.gps__text {
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 0.875em;
+    color: black;
+    font-weight: 700;
+}
+
+.home__divider{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1em 0 1em;
+}
+
+.info__dividerLine{
+    width: 100%;
+    border: none; 
+    height: 2px; 
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.yourPackages{
+    width: 100%;
+}
+
+.package{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* Sørger for at knappen ude til højre forbliver til højre mens alt andet content bliver til venstre */
+    height: 100%;
+    width: 100%;
+    background-color: var(--clr-ghost-white);
+    margin-bottom: 1em;
+}
+
+.package__info{
+    display: flex;
+    flex-direction: column;
+}
+
+.package__title{
+    font-size: 1.1250em;
+    padding: 0.75em;
+    font-weight: 550;
+}
+
+.package__number{
+
+    padding: 0.75em;
+}
+
+.package__expiration{
+    padding: 0.75em;
+    color: red;
+}
+
+.button__container{
+    background-color: #03045E;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.package__button{
+
+}
+
+.button__img{
+
+}
